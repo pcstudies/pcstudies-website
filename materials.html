@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Materials | PCStudies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PCStudies</div>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="school.html">School Education</a></li>
+            <li><a href="exams.html">Competitive Exams</a></li>
+            <li><a href="materials.html">Study Materials</a></li>
+        </ul>
+    </nav>
+
+    <header class="materials-banner">
+        <h1>Study Materials</h1>
+        <p>Find useful study resources for school and competitive exams.</p>
+    </header>
+
+    <main class="materials-container">
+
+        <h2>Find Your Study Materials</h2>
+
+        <div class="materials-filters">
+            <input
+                type="text"
+                id="materialSearch"
+                placeholder="Search by subject or topic..."
+            >
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="school">School Education</option>
+                <option value="competitive">Competitive Exams</option>
+                <option value="college">College Studies</option>
+            </select>
+        </div>
+
+        <div class="materials-grid" id="materialsGrid">
+
+            <div class="material-card" data-category="school">
+                <h3>Class 10 Mathematics</h3>
+                <p>Subject: Mathematics</p>
+                <p>Topic: Algebra</p>
+                <span class="pdf-label">PDF Material</span>
+                <a href="materials/pdfs/Class-10-Telangana-SSC-Mathematics-Notes-English.pdf"
+                   class="download-btn" download>
+                    Download PDF
+                </a>
+            </div>
+
+            <div class="material-card" data-category="school">
+                <h3>Class 10 Science</h3>
+                <p>Subject: Science</p>
+                <p>Topic: Physics</p>
+                <span class="pdf-label">PDF Material</span>
+                <a href="materials/pdfs/class-10-science.pdf"
+                   class="download-btn" download>
+                    Download PDF
+                </a>
+            </div>
+
+            <div class="material-card" data-category="competitive">
+                <h3>General Studies</h3>
+                <p>Exam: TSPSC / APPSC</p>
+                <p>Topic: Indian Polity</p>
+                <span class="pdf-label">PDF Material</span>
+                <a href="materials/pdfs/indian-polity.pdf"
+                   class="download-btn" download>
+                    Download PDF
+                </a>
+            </div>
+
+            <div class="material-card" data-category="competitive">
+                <h3>SSC Mathematics</h3>
+                <p>Exam: SSC</p>
+                <p>Topic: Quantitative Aptitude</p>
+                <span class="pdf-label">PDF Material</span>
+                <a href="materials/pdfs/ssc-maths.pdf"
+                   class="download-btn" download>
+                    Download PDF
+                </a>
+            </div>
+
+            <div class="material-card" data-category="college">
+                <h3>Computer Science</h3>
+                <p>Category: College Studies</p>
+                <p>Topic: Programming Basics</p>
+                <span class="pdf-label">PDF Material</span>
+                <a href="materials/pdfs/programming-basics.pdf"
+                   class="download-btn" download>
+                    Download PDF
+                </a>
+            </div>
+
+        </div>
+
+        <p id="noMaterials" class="no-materials" hidden>
+            No study materials found.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 PCStudies. Learn Today. Lead Tomorrow.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
